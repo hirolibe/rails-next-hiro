@@ -61,7 +61,7 @@ const SignIn: NextPage = () => {
     <Box
       sx={{
         backgroundColor: '#EDF2F7',
-        minHeight: 'calc(100vh - 57px)',
+        minHeight: 'calc(100vh - 64px)',
       }}
     >
       <Container maxWidth="sm">
