@@ -160,7 +160,7 @@ const CurrentArticleDetail: NextPage = () => {
                   marginTop: { xs: '24px', sm: '40px' },
                 }}
               >
-                <MarkdownText content={article.content} />
+                {article.content && <MarkdownText content={article.content} />}
               </Box>
             </Card>
           </Box>
