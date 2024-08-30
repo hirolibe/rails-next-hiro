@@ -96,6 +96,7 @@ const CurrentArticlesEdit: NextPage = () => {
         pathname: '/current/articles/edit/[id]',
       })
     }
+
     if (statusChecked && data.content == '') {
       return setSnackbar({
         message: '本文なしの記事は公開はできません',
@@ -141,8 +142,6 @@ const CurrentArticlesEdit: NextPage = () => {
           severity: 'error',
           pathname: '/current/articles/edit/[id]',
         })
-      })
-      .finally(() => {
         setIsLoading(false)
       })
   }
