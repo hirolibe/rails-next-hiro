@@ -54,13 +54,7 @@ const SignUp: NextPage = () => {
         data: { ...data, confirm_success_url: confirmSuccessUrl },
         headers: headers,
       })
-        .then((res: AxiosResponse) => {
-          localStorage.setItem(
-            'access-token',
-            res.headers['access-token'] || '',
-          )
-          localStorage.setItem('client', res.headers['client'] || '')
-          localStorage.setItem('uid', res.headers['uid'] || '')
+        .then(() => {
           setSnackbar({
             message: '認証メールをご確認ください',
             severity: 'success',
